@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1331668252450824005}
   - component: {fileID: 5353353761206189699}
   - component: {fileID: 6080379301798384122}
-  - component: {fileID: 1206909016956983352}
+  - component: {fileID: 2779128931443195968}
+  - component: {fileID: 717931043535166276}
   m_Layer: 0
   m_Name: SpellButton
   m_TagString: Untagged
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1206909016956983352}
+      - m_Target: {fileID: 2779128931443195968}
         m_MethodName: Change
         m_Mode: 1
         m_Arguments:
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &1206909016956983352
+--- !u!114 &2779128931443195968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +159,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331668252450824007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 308be161170c745359f4bdc677c771fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PageParent: {fileID: 0}
-  PageToLoad: {fileID: 0}
+  PageToLoad: {fileID: 4431380936272803234, guid: 1a4e99317d9e54abda47beb96d2a35c8,
+    type: 3}
   Direction: 0
+  isSpellButton: 1
+--- !u!114 &717931043535166276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331668252450824007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e52c0f98b9c463fa230fb325550ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  desc: 
+  page: 
+  range: 
+  components: 
+  material: 
+  ritual: 
+  duration: 
+  concentration: 
+  casting_time: 
+  level: 
+  school: 
+  classes: 

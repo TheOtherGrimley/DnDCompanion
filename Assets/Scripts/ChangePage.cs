@@ -9,11 +9,18 @@ public class ChangePage : MonoBehaviour
     public Dir Direction;
     public enum Dir { Forward, Backwards };
 
+    public bool isSpellButton;
 
-    public void Change()
+
+    public virtual void Change()
     {
-        Page pageController = PageParent.transform.GetComponentInParent<Page>();
-        if(Direction == Dir.Forward)
+        Page pageController;
+        if (!isSpellButton)
+            pageController = PageParent.transform.GetComponentInParent<Page>();
+        else
+            pageController = this.transform.parent.parent.parent.GetComponentInParent<Page>();
+
+        if (Direction == Dir.Forward)
         {
             for (int i = pageController.Neighbours[1].transform.childCount; i > 0; i--)
                 Destroy(pageController.Neighbours[1].transform.GetChild(i - 1).gameObject);

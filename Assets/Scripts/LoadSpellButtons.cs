@@ -17,28 +17,24 @@ public class LoadSpellButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(RawSpells.text);
-
         SpellList listing = JsonUtility.FromJson<SpellList>(RawSpells.text);
         spells = listing.jsonSpellData.ToArray();
 
         foreach (Spell s in spells)
         {
             GameObject temp = Instantiate(prefab, this.transform);
+
             temp.GetComponent<Text>().text = s.name;
+            temp.name = s.name;
+            temp.GetComponent<SpellDeets>().SetSpell(s);
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     [Serializable]
     public struct Spell
     {
-        public string name;
+        public string name; // We want to hide the object name for reasons i guess
         public string desc;
         public string page;
         public string range;
@@ -51,6 +47,7 @@ public class LoadSpellButtons : MonoBehaviour
         public string level;
         public string school;
         public string classes;
+
     }
 
     [Serializable]
