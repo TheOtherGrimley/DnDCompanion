@@ -167,6 +167,8 @@ MonoBehaviour:
     type: 3}
   Direction: 0
   isSpellButton: 1
+  SpellLevelButton: {fileID: 8458483812587924256, guid: c716b0cb9ee654b9fb40ca2f39c6d6f5,
+    type: 3}
 --- !u!114 &717931043535166276
 MonoBehaviour:
   m_ObjectHideFlags: 0
