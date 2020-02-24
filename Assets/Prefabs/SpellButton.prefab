@@ -161,6 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PageParent: {fileID: 0}
+  PageParent: {fileID: 4431380936272803234, guid: 44a3ce14f66cb439d983e2cbe4df2484,
+    type: 3}
   PageToLoad: {fileID: 0}
   Direction: 0
+  isSpellButton: 1

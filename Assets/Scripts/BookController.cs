@@ -36,6 +36,7 @@ public class BookController : MonoBehaviour
 
     public void NextPage()
     {
+        SectionUpdate();
         if (Page == 0)
         {
             anim.SetTrigger("Next Page");
@@ -53,6 +54,7 @@ public class BookController : MonoBehaviour
 
     public void PrevPage()
     {
+        SectionUpdate();
         if (Page == 1)
         {
             anim.SetTrigger("Prev Page");
@@ -68,7 +70,7 @@ public class BookController : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+    void SectionUpdate()
     {
         if(Section == 0)
         {
@@ -103,16 +105,20 @@ public class BookController : MonoBehaviour
 
     IEnumerator FadePageOut(GameObject Canvas)
     {
+        Debug.Log("HIT");
         float t = 0.2f;
+        Text[] texts = Canvas.transform.GetComponentsInChildren<Text>();
+        Image[] images = Canvas.transform.GetComponentsInChildren<Image>();
+        Color c = new Color(0, 0, 0, 0f);
         while (t > 0)
         {
-            foreach(Text txt in Canvas.transform.GetComponentsInChildren<Text>())
+            foreach(Text txt in texts)
             {
-                txt.color = Color.Lerp(txt.color, new Color(txt.color.r, txt.color.g, txt.color.b, 0f), t);
+                txt.color = Color.Lerp(txt.color, c, t);
             }
-            foreach(Image img in Canvas.transform.GetComponentsInChildren<Image>())
+            foreach(Image img in images)
             {
-                img.color = Color.Lerp(img.color, new Color(img.color.r, img.color.g, img.color.b, 0f), t);
+                img.color = Color.Lerp(img.color, c, t);
             }
             t -= t / Time.deltaTime;
             yield return new WaitForEndOfFrame();
@@ -123,9 +129,11 @@ public class BookController : MonoBehaviour
     IEnumerator FadePageIn(GameObject Canvas)
     {
         float t = 0.2f;
+        Text[] texts = Canvas.transform.GetComponentsInChildren<Text>();
+        Image[] images = Canvas.transform.GetComponentsInChildren<Image>();
         while (t > 0)
         {
-            foreach(Text txt in Canvas.transform.GetComponentsInChildren<Text>())
+            foreach(Text txt in texts)
             {
                 txt.color = Color.Lerp(txt.color, new Color(txt.color.r, txt.color.g, txt.color.b, 1f), t);
             }

@@ -165,6 +165,7 @@ MonoBehaviour:
   PageToLoad: {fileID: 4431380936272803234, guid: 3c651fe07fd244596b1cc3402a6055f4,
     type: 3}
   Direction: 1
+  isSpellButton: 0
 --- !u!1 &2675966455738670220
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +221,7 @@ MonoBehaviour:
   m_Content: {fileID: 2565613127453411251}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 0
+  m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -336,6 +337,7 @@ GameObject:
   - component: {fileID: 2853719002093638218}
   - component: {fileID: 3036558827753816082}
   - component: {fileID: 8167152796825791198}
+  - component: {fileID: 3610661448032113328}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -379,7 +381,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 1
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
@@ -400,6 +402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1331668252450824007, guid: 054e5cd95e46546148e3c36c327da105, type: 3}
+  SpellDetailPage: {fileID: 4431380936272803234, guid: b88249a18231a4c05bf24682ee3dd0b7,
+    type: 3}
   RawSpells: {fileID: 4900000, guid: 327cbb049b7024a8da01a169033108a0, type: 3}
 --- !u!222 &3036558827753816082
 CanvasRenderer:
@@ -422,6 +426,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!114 &3610661448032113328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891209221684495383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &6653788542442782837
 GameObject:
   m_ObjectHideFlags: 0
