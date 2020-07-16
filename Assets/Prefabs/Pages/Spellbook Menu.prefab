@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1712034828956230596}
   - component: {fileID: 945683073044198681}
   - component: {fileID: 1429215415018442789}
-  - component: {fileID: 1129682379989107250}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -63,6 +62,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -122,18 +123,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1712034828956230596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1129682379989107250}
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1429215415018442789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,22 +139,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &1129682379989107250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553230196713374673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PageParent: {fileID: 4431380936272803234}
-  PageToLoad: {fileID: 4431380936272803234, guid: 9ae940eacfb7f472fb3c4a15b88caac1,
-    type: 3}
-  Direction: 1
 --- !u!1 &2633920514635245256
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +152,6 @@ GameObject:
   - component: {fileID: 2633920514635245258}
   - component: {fileID: 8988189907549652748}
   - component: {fileID: 7104218658453923957}
-  - component: {fileID: 2758829308605784503}
   m_Layer: 0
   m_Name: My Spellbook
   m_TagString: Untagged
@@ -228,6 +201,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -287,18 +262,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2633920514635245258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2758829308605784503}
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &7104218658453923957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,21 +278,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &2758829308605784503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633920514635245256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PageParent: {fileID: 4431380936272803234}
-  PageToLoad: {fileID: 0}
-  Direction: 0
 --- !u!1 &2675966455738670220
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +343,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &4431380936272803234
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +396,6 @@ GameObject:
   - component: {fileID: 4086351260562118439}
   - component: {fileID: 1892452020038954100}
   - component: {fileID: 9030527081824284522}
-  - component: {fileID: 9103310131111206951}
   m_Layer: 0
   m_Name: All
   m_TagString: Untagged
@@ -496,6 +445,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -555,18 +506,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4086351260562118439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9103310131111206951}
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &9030527081824284522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,22 +522,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &9103310131111206951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6582533490032550362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PageParent: {fileID: 4431380936272803234}
-  PageToLoad: {fileID: 4431380936272803234, guid: 44a3ce14f66cb439d983e2cbe4df2484,
-    type: 3}
-  Direction: 0
 --- !u!1 &6653788542442782837
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +583,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -704,7 +630,6 @@ GameObject:
   - component: {fileID: 4063468175658050889}
   - component: {fileID: 171330111247090465}
   - component: {fileID: 1044471209010794540}
-  - component: {fileID: 6354326261650957630}
   m_Layer: 0
   m_Name: Classes
   m_TagString: Untagged
@@ -754,6 +679,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -813,18 +740,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4063468175658050889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6354326261650957630}
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1044471209010794540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,21 +756,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &6354326261650957630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8096232672642764893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PageParent: {fileID: 4431380936272803234}
-  PageToLoad: {fileID: 0}
-  Direction: 0
 --- !u!1 &8539760624868836352
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +817,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9433962, g: 0.057849795, b: 0.057849795, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -957,7 +860,6 @@ GameObject:
   - component: {fileID: 7067299326241583088}
   - component: {fileID: 7689697360314549716}
   - component: {fileID: 2675762878518231122}
-  - component: {fileID: 1584744493797581750}
   m_Layer: 0
   m_Name: School
   m_TagString: Untagged
@@ -1007,6 +909,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1066,18 +970,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7067299326241583088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1584744493797581750}
-        m_MethodName: Change
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2675762878518231122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,18 +986,3 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3137255}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &1584744493797581750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8552014588434090134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9410abe187d954a758e16569c4546cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PageParent: {fileID: 4431380936272803234}
-  PageToLoad: {fileID: 0}
-  Direction: 0

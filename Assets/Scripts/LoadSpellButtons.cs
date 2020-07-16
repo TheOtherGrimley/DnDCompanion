@@ -30,8 +30,6 @@ public class LoadSpellButtons : MonoBehaviour
             GameObject temp = Instantiate(prefab, this.transform);
             temp.GetComponent<Text>().text = s.name;
             GameObject tempSpellDetail = SpellDetailPage;
-            temp.GetComponent<ChangePage>().PageToLoad = tempSpellDetail;
-            temp.GetComponent<ChangePage>().PageParent = transform.parent.parent.gameObject;
         }
     }
 
